@@ -7,20 +7,13 @@ CREATE TABLE employees (
   first_name VARCHAR(30) NOT NULL,
   last_name VARCHAR(30) NOT NULL,
   role_id INTEGER 
-  FOREIGN KEY (id)
-    REFERENCES roles(id),
-  manager_id INTEGER 
-  FOREIGN KEY (id)
-    REFERENCES employees(id)
 );
 
 CREATE TABLE roles (
-  id INTEGER AUTO_INCREMENT PRIMARY KEY NOT NULL,
+  id INTEGER AUTO_INCREMENT PRIMARY KEY,
   title VARCHAR(30) NOT NULL,
   salary DECIMAL(10,2) NOT NULL,
-  department_id INTEGER,
-  FOREIGN KEY (id)
-    REFERENCES department(id)
+  department_id INTEGER
 );
 
 CREATE TABLE department (
