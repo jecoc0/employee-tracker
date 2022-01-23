@@ -1,10 +1,10 @@
--- INSERT INTO department(name)
--- VALUES
---   ('Accounts Payable'),
---   ('Travel'),
---   ('Office of Sponsored Projects'),
---   ('Income Accounting'),
---   ('GC Accounting');
+INSERT INTO departments(name)
+VALUES
+  ('Accounts Payable'),
+  ('Travel'),
+  ('Office of Sponsored Projects'),
+  ('Income Accounting'),
+  ('GC Accounting');
 
 INSERT INTO roles (title, salary, department_id)
 VALUES
