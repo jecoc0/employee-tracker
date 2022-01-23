@@ -46,7 +46,12 @@ app.get('/', (req, res) => {
 
 // Get all employees
 app.get('/api/employees', (req, res) => {
-  const sql = `SELECT * from employees`;
+  const sql = `SELECT employees.*, 
+                roles.title AS role_title,
+                roles.salary AS role_salary
+                FROM employees
+                LEFT JOIN roles
+                ON employees.role_id = roles.id`;
 
   db.query(sql, (err, rows) => {
     if (err) {
@@ -63,7 +68,13 @@ app.get('/api/employees', (req, res) => {
 
 // GET a single employee
 app.get('/api/employee/:id', (req, res) => {
-  const sql = `SELECT * FROM employees WHERE id = ?`;
+  const sql = `SELECT employees.*, 
+                roles.title AS role_title,
+                roles.salary AS role_salary
+                FROM employees
+                LEFT JOIN roles
+                ON employees.role_id = roles.id 
+                WHERE employees.id = ?`;
   const params = [req.params.id];
 
   db.query(sql, params, (err, row) => {
