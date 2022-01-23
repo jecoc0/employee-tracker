@@ -18,24 +18,24 @@ VALUES
   ('Grants Accountant', 58000.00, 5),
   ('Grants Manager', 87000, 5);
 
-INSERT INTO employees (first_name, last_name, role_id)
+INSERT INTO employees (first_name, last_name, role_id, manager_id)
 VALUES
-  ('Sharice', 'Zobel', 1),
-  ('David', 'Richards', 2),
-  ('Kelsey', 'Stickler', 2),
-  ('Jane', 'Haprin', 3),
-  ('Markus', 'Villanova', 3),
-  ('Steve', 'Stevenson', 3),
-  ('Jana', 'Banana', 4),
-  ('Thomas', 'Bolderton', 4),
-  ('Carsyn', 'Wright', 4),
-  ('Marci', 'Meyer', 5),
-  ('Cecilia', 'Good', 5),
-  ('Jennifer', 'Groves', 6), 
-  ('Franklin', 'McDuffy', 7),
-  ('Charles', 'Fielsted', 8),
-  ('Aaron', 'Rogers', 8),
-  ('Alyssa', 'Market', 8),
-  ('Samantha', 'Christensen', 9),
-  ('Kyle', 'Black', 9);
+  ('Sharice', 'Zobel', 1, NULL),
+  ('David', 'Richards', 2, 1),
+  ('Kelsey', 'Stickler', 2, 1),
+  ('Jane', 'Haprin', 3, 2),
+  ('Markus', 'Villanova', 3, 2),
+  ('Steve', 'Stevenson', 3, 3),
+  ('Jana', 'Banana', 4, 10),
+  ('Thomas', 'Bolderton', 4, 10),
+  ('Carsyn', 'Wright', 4, 11),
+  ('Marci', 'Meyer', 5, 1),
+  ('Cecilia', 'Good', 5, 1),
+  ('Jennifer', 'Groves', 6, 13), 
+  ('Franklin', 'McDuffy', 7, NULL),
+  ('Charles', 'Fielsted', 8, 17),
+  ('Aaron', 'Rogers', 8, 17),
+  ('Alyssa', 'Market', 8, 18),
+  ('Samantha', 'Christensen', 9, 1),
+  ('Kyle', 'Black', 9, 1);
     
