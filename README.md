@@ -6,31 +6,28 @@ This SQL app was created to help track employees for a small company.
 
 - Motivation: There is a lot of information to track for any hired employee, this stores all of the information in one place.
 
+- Information can easily be updated from the command line. New employees, departments, and roles can be created, employees, departments, and roles can be viewed, and employees, departments and roles can be deleted from the database using simple Inquirer prompts.
+
 
 ## Installation
+In the command line:
+
+ `npm init`
+
+ `npm install inquirer`
+
+ `npm install mysql2`
+
+ `npm install console-table`
 
 ## Usage
-- provide examples for use and screenshots/video
+In the command line at the root of project, run:
+
+`npm start`
 
 ## Credits
 
+Trilogy Class code and [jpd61 on GitHub](https://github.com/jpd61) 
 
-GIVEN a command-line application that accepts user input
-WHEN I start the application
-THEN I am presented with the following options: view all departments, view all roles, view all employees, add a department, add a role, add an employee, and update an employee role
-WHEN I choose to view all departments
-THEN I am presented with a formatted table showing department names and department ids
-WHEN I choose to view all roles
-THEN I am presented with the job title, role id, the department that role belongs to, and the salary for that role
-WHEN I choose to view all employees
-THEN I am presented with a formatted table showing employee data, including employee ids, first names, last names, job titles, departments, salaries, and managers that the employees report to
-WHEN I choose to add a department
-THEN I am prompted to enter the name of the department and that department is added to the database
-WHEN I choose to add a role
-THEN I am prompted to enter the name, salary, and department for the role and that role is added to the database
-WHEN I choose to add an employee
-THEN I am prompted to enter the employee’s first name, last name, role, and manager, and that employee is added to the database
-WHEN I choose to update an employee role
-THEN I am prompted to select an employee to update and their new role and this information is updated in the database
 ## License
-
+MIT License -  Copyright Jessica Groves 2022 &copy;
