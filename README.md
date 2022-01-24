@@ -25,6 +25,9 @@ In the command line at the root of project, run:
 
 `npm start`
 
+See [full walk-through](https://drive.google.com/file/d/1Ya8b-Yv_TzX8UQlIMHwWbhs3QlmMeoti/view?usp=sharing)
+
+
 ## Credits
 
 Trilogy Class code and [jpd61 on GitHub](https://github.com/jpd61) 
